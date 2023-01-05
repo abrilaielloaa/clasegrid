@@ -1,0 +1,195 @@
+/* Inicio, repaso, desktop */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
+}
+
+.sectionSabores div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionMedia div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.sectionGrid div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "uno uno dos .."
+    "uno uno tres cuatro"
+    "cinco seis siete siete"
+    ".. ocho siete siete";
+    justify-items: start;
+    align-items: stretch;
+}
+
+/* Pido mil disculpas por lo mal alineado que va a quedar esto, hice lo mejor que pude. Diseñadores en la sala y gente sensible close the eyes */
+
+.uno{
+    grid-area: uno;
+}
+.dos{
+    grid-area: dos;
+}
+.tres{
+    grid-area: tres;
+}
+.cuatro{
+    grid-area: cuatro;
+}
+.cinco{
+    grid-area: cinco;
+}
+.seis{
+    grid-area: seis;
+}
+.siete{
+    grid-area: siete
+}
+.ocho{
+    grid-area: ocho;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 6fr 1fr;
+    grid-template-areas: 
+    "contacto acercade"
+    "copyright copyright";
+    grid-row-gap: 5% ;
+    justify-items: center;
+    font-size: 2rem;
+}
+
+.infoContacto{
+    grid-area: contacto;
+}
+
+.acercaNosotros{
+    grid-area: acercade;
+}
+
+.acercaNosotros div{
+    display: flex;
+    flex-direction: row;
+}
+
+.copyright{
+    grid-area: copyright;
+}
+
+/* Media queries */
+
+
+
+
+/* Estilos que no se comentan  */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+header{
+    background-color: #A64826;
+}
+
+header img{
+    width: 50%;
+}
+
+nav{
+    width: 90%;
+}
+
+ul{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+}
+li{
+    margin: 5%;
+}
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+section{
+    padding: 5%;
+}
+
+.sectionSabores{
+    background-color: #F2BE22;
+}
+
+.sectionMedia{
+    background-color: #A67D03;
+}
+
+.sectionMedia img{
+    width: 24%;
+}
+
+.sectionGrid{
+    background-color: #F2BE22;
+}
+
+.sectionGrid img{
+    width: 90%;
+}
+
+h2{
+    font-size: 4rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+section img{
+    width: 25%;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+footer{
+    background-color: #A64826;
+    color: white;
+}
